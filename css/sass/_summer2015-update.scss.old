@@ -1,0 +1,168 @@
+@import "roblib-search";
+@import "megamenu";
+/* ==========================================================================
+  logo in the menubar
+  ========================================================================== */
+#menu-bar-wrapper {
+    -webkit-box-shadow: 0 3px 2px #777;
+    -moz-box-shadow: 0 3px 2px #777;
+    box-shadow: 0 3px 2px #777;
+}
+
+// remove the borders
+#header-wrapper, #top-panels-wrapper {
+    border: 0px;
+}
+
+#menu-bar-wrapper .container {
+    max-width: 100%;
+}
+
+#header-wrapper, #top-panels-wrapper {
+    border-bottom: 0px;
+}
+.upei-branding {
+    .block {
+        float: left;
+    }
+    .block-inner {
+        margin-left: 0px;
+    }
+}
+
+#site-name {
+    // text-align: center;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0;
+    font-size: 1.6em !important;
+    line-height: 1;
+    display: block;
+    a {
+        text-transform: lowercase;
+        font-variant: small-caps;
+        font-family: Georgia, Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif;
+        color: #fff;
+    }
+}
+
+.site-name {
+    width: 125px;
+}
+
+.logo {
+    width: 154px;
+    line-height: 0px;
+    padding: 4px 0;
+}
+
+#logo {
+    display: table-cell;
+    padding: 0 10px 0 0;
+}
+
+
+
+// menu bar layout
+.menu-wrapper {
+    margin: 0px;
+}
+
+div#menu-bar-wrapper {
+    padding: 0 10px;
+}
+
+#menu-bar .block {
+    margin-bottom: 0px;
+    clear: initial;
+}
+
+.upei-branding .inside {
+    margin: 0px !important;
+}
+#menu-bar div.contextual-links-wrapper {
+    right: 0px;
+    z-index: 10000;
+}
+// layout
+#menu-bar {
+    @include container(100%);
+}
+#menu-bar .todays-hours a, #site-name a{
+    @include transition(color .5s);
+    &:hover {
+    color: lighten($red, 10%)
+}
+}
+
+.upei-branding {}
+
+
+.todays-hours { margin-top: 4px; text-align: center; background-color: dimgrey;
+    border-radius: 4px;}
+
+.todays-hours.desktop { display: none;}
+.todays-hours.mobile { display: none;}
+
+@include breakpoint(980px) {
+    .todays-hours.desktop { display: none;}
+    .todays-hours.mobile { display: block; float: right;}
+}
+@include breakpoint(1320px) {
+    .todays-hours.desktop { display: block; float: right;}
+    .todays-hours.mobile { display: none; }
+}
+// .upei-branding {
+//     @include span(3 of 4);
+//     @include breakpoint(980px) {
+//         float: none;
+//         width: 100%;
+//     }
+// }
+// .megamenu {
+//     @include span(1 at 4 of 4 last);
+//     @include breakpoint(980px) {
+//         float: none;
+//         width: 100%;
+//     }
+// }
+
+.megamenu {
+    margin-top: 2px;
+    padding-top: 5px;
+    border-top: 1px solid #5A5A5A;
+}
+
+@include breakpoint(1320px) {
+    .upei-branding {
+        @include span(3 of 12 no-gutter);
+    }
+    .megamenu {
+        @include span(7 at 4 of 12);
+        margin-top: 0px; padding-top: 0px; border-top: 0px; 
+    }
+    .todays-hours.desktop {
+        @include span(2 at 11 of 12 last);
+    }
+}
+
+
+// .todays-hours {
+//         @include span(2 at 15 of 16 last);
+//     }
+
+/* ==========================================================================
+  todays hours
+  ========================================================================== */
+
+#menu-bar .todays-hours {
+    // float: right !important;
+    a {
+        color: #fff;
+        font-size: .9em;
+        // text-align: center;
+   
+    }
+}
+
+
