@@ -45,19 +45,13 @@ div#menu-bar-wrapper { padding: 0 10px; }
   }
 }
 
-
-
 #menu-bar .todays-hours { @include link-transition();} 
 #site-name { @include link-transition();}
-
-
 #header-wrapper, #top-panels-wrapper { border-bottom: 0px; }
 .upei-branding { .block { float: left; }
     .block-inner { margin-left: 0px; }
 }
-
 .upei-branding .inside { margin: 0px !important; }
-
 #site-name { margin: 0px; padding: 0px; line-height: 0; font-size: 1.6em !important; line-height: 1; display: block; word-wrap: normal;
     a { text-transform: lowercase; font-variant: small-caps; font-family: Georgia, Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif; color: #fff; }
 }
@@ -67,7 +61,6 @@ div#menu-bar-wrapper { padding: 0 10px; }
 
 .todays-hours { margin-top: 7px; text-align: center; background-color: dimgrey; border-radius: 4px; }
 
-
 .todays-hours.mobile { 
       display: none;
     @include breakpoint(980px) {
@@ -76,11 +69,11 @@ div#menu-bar-wrapper { padding: 0 10px; }
      @include breakpoint(1275px) {
       display: none;} 
 }
+
 .upei-branding {
   @include span(280px);
-
   @include breakpoint(980px) {
-    @include span(100%);
+  @include span(100%);
   }
   @include breakpoint(1275px) {
     @include span(280px);
@@ -93,16 +86,17 @@ div#menu-bar-wrapper { padding: 0 10px; }
 .megamenu {
   @include breakpoint(980px) {
     padding-top: 5px;
-    @include span(100%);}
-    @include breakpoint(1275px) {
+    @include span(100%);
+  }
+  @include breakpoint(1275px) {
     // width: initial;
     // margin-right: 20px;
     width: 100%;
-    #tb-megamenu-menu-center-navigation {
-    width: 700px;
-    margin: 0 auto;
-}
 
+    #tb-megamenu-menu-center-navigation {
+      width: 700px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -113,12 +107,10 @@ div#menu-bar-wrapper { padding: 0 10px; }
   }
   @include breakpoint(1275px) {
   }
-
 }
 
 .todays-hours.desktop {
   display: none;
-
   @include breakpoint(1275px) {
     display: block;
     width: 180px;
@@ -210,13 +202,11 @@ div#menu-bar-wrapper { padding: 0 10px; }
 
 }
 
-
 .tb-megamenu .tb-block i.fa {
     font-size: 2.5em;
     margin-right: 9px;
     color: $red;
 }
-
 
 .tb-megamenu .dropdown-menu .active > a, .tb-megamenu .dropdown-menu .active > a:hover {
     color: #eee;
