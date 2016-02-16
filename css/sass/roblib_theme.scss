@@ -1,6 +1,7 @@
-/* @override 
-  http://roblib.local:8083/sites/all/themes/roblib_theme/css/roblib_theme.css?n4g174 */
-
+//********************
+// Variables and mixins and imports
+//********************
+// {{{
 @import "sassy-buttons";
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
@@ -20,11 +21,6 @@ $box-model: unquote($box-model);
 }
 
 @import "compass/typography/lists/horizontal-list";
-
-
-//********************
-// Variables
-//********************
 
 $header_black: #333333;
 $white: white;
@@ -62,11 +58,11 @@ tr td:last-child {
         }
     }
 }
-
+// }}}
 /* **************************************
 / Typography
 /************************************** */
-
+// {{{
 #site-name a {
     letter-spacing: 0px;
 }
@@ -74,10 +70,18 @@ tr td:last-child {
 #site-name {
     font-size: 2.5em;
 }
-
+// }}}
 /* **************************************
 / Global stuff
 /************************************** */
+// {{{
+/*adds a border around images in the content area*/
+#content img {
+	border: 1px solid #ccc;
+	padding: 4px;
+	border-radius: 4px;
+}
+
 
 #top-panels-wrapper {
     border-top: 1px solid $grey1;
@@ -93,25 +97,11 @@ h1#page-title {
 .content-style a {
     text-decoration: underline;
 }
-
-/* **************************************
-/ Main Nav Bar
-/************************************** */
-
-// #menu-bar {
-//     float: right;
-// }
-
-// .nav .block-menu ul a {
-//     padding: 0.3em 1em;
-//     text-decoration: none;
-//     float: left;
-// }
-
+// }}}
 /***************************************
 / Header
 /************************************** */
-
+// {{{
 #logo {
     border-right: solid $grey3 1px;
 }
@@ -141,11 +131,11 @@ h1#page-title {
     padding: 0;
     line-height: 100%;
 }
-
+// }}}
 /***************************************
 / pre-footer
 /************************************** */
-
+// {{{
 #tertiary-content-wrapper {
     margin-bottom: 0px;
     background-color: $grey3;
@@ -155,11 +145,11 @@ h1#page-title {
         padding-top: 20px;
     }
 }
-
+// }}}
 /* **************************************
 / footer
 /************************************** */
-
+// {{{
 #footer-panels-wrapper {
     background: #363636;
     padding: 25px 0 10px;
@@ -171,11 +161,11 @@ h1#page-title {
     background-color: #2c2c2c;
     border-top: 5px solid $red;
 }
-
+// }}}
 /* *****************************
 /   Footer links
 ***************************** */
-
+// {{{
 .footer-links {
     border-left: 1px solid $grey3;
     padding-left: 15px;
@@ -205,10 +195,36 @@ h1#page-title {
     border-left: none;
 }
 
+
+/*=============================================
+* =        Social media footer block            =
+* =============================================*/
+
+ul.social-media li {
+    display: inline-block;
+    width: 43%;
+    text-align: center;
+}
+
+ul.social-media li a:hover {
+    color: #5b8c1f;
+}
+
+ul.social-media li i {
+    font-size: 3em;
+	transition : color 0.3s;
+}
+
+.footer-links .title:nth-of-type(2) {
+    margin-top: 1em;
+    display: block;
+}
+/*=====    Social media footer block  ======*/
+// }}}
 /* *****************************
 /   closure notice block
 ***************************** */
-
+// {{{
 .closure-notice {
     float: none !important;
     border: 2px solid $red;
@@ -223,11 +239,11 @@ h1#page-title {
         color: $red;
     }
 }
-
+// }}}
 /* *****************************
 /   SubFooter
 ***************************** */
-
+// {{{
 .links-last {
     color: $grey3;
     display: flex;
@@ -290,11 +306,11 @@ h1#page-title {
         }
     }
 }
-
+// }}}
 /* **************************************
 / layout testing
 /************************************** */
-
+// {{{
 #ult {
     background-color: brown;
     width: 100%;
@@ -322,21 +338,22 @@ h1#page-title {
 .node-flex-gallery {
     margin-bottom: -41px;
 }
-
+// }}}
 /* ==========================================================================
    front page slider
    ========================================================================== */
-
+// {{{
 .flexslider--frontpage .flexslider {
     margin: 0 0 0px;
     li {
         margin-left: 3px;
     }
 }
-
+// }}}
 /* ==========================================================================
    block styles
    ========================================================================== */
+// {{{
 .sidebar .block {
     div.block-inner {
         background: white;
@@ -355,20 +372,20 @@ h1#page-title {
         padding: 10px;
     }
 }
-
+// }}}
 /* ==========================================================================
    book slideshow
    ========================================================================== */
-
+// {{{
 .block-new-books-block-1 .flexslider,
 .block-new-books-block .flexslider {
     margin: 0px;
 }
-
+// }}}
 /* ==========================================================================
    library news block
    ========================================================================== */
-
+// {{{
 #block-views-event-calendar-block-3 {
     div.block-inner {
         background: white;
@@ -408,11 +425,11 @@ h1#page-title {
 //         padding: 5px;
 //     }
 // }
-
+// }}}
 /* **************************************
 / Center Nav bar (full)
 /************************************** */
-
+// {{{
 ul#nice-menu-1 {
     float: left;
     border: 0;
@@ -481,11 +498,11 @@ i.icon.fontello {
     color: #f3f3f1;
     border-radius: 0 0 10px 10px;
 }
-
+// }}}
 /***************************************
 / Center Nav bar (responsive)
 /************************************** */
-
+// {{{
 .responsive-menus.responsified .responsive-menus-simple li a {
     color: #fff;
     display: block;
@@ -498,10 +515,11 @@ i.icon.fontello {
     text-decoration: none;
     text-transform: uppercase;
 }
-
+// }}}
 /***************************************
 / Library Hours (block)
 /************************************** */
+// {{{
 section#block-views-current-library-hours-block {
     // float: right;
     div.block-inner {
@@ -517,10 +535,11 @@ section#block-views-current-library-hours-block {
         text-transform: none;
     }
 }
-
+// }}}
 /***************************************
 / Quick tabs
 /************************************** */
+// {{{
 div#quickset-quicktabs_search_tabs {
     .block-inner {
         @include box-shadow;
@@ -645,11 +664,11 @@ input#ebscohostsearchtext {
 // .search-accordion input.form-text {
 //   max-width: 272px;
 //   width: 100%;
-// }
+// }// }}}
 /* ==========================================================================
    landing page buttons
    ========================================================================== */
-
+// {{{
 nav.green_landing_page_buttons {
     .content {
         // margin-left: 64px;
@@ -661,7 +680,7 @@ nav.green_landing_page_buttons {
     ul.menu {
         @include horizontal-list;
         li {
-            width: 32%;
+            width: 23.6%;
         }
         a {
             @include sassy-button("flat", 10px, 19px, $green);
@@ -673,11 +692,11 @@ nav.green_landing_page_buttons {
         }
     }
 }
-
+// }}}
 /* ==========================================================================
    staff tasks button
    ========================================================================== */
-
+// {{{
 div#block-block-123 {
     /* position: absolute; */
     margin: 0px;
@@ -689,10 +708,11 @@ div#block-block-123 {
         line-height: 138%;
     }
 }
-
+// }}}
 /***************************************
 / About Us Block
 /************************************** */
+// {{{
 .libraryh3lp, .libraryh3lp2 {
     iframe {
         width: 90% !important;
@@ -716,10 +736,11 @@ div#block-block-123 {
     float: left;
     padding-left: 40px;
 }
-
+// }}}
 /***************************************
 / Susy Layout tests
 /************************************** */
+// {{{
 #susytest_cont1 {
     @include container;
 }
@@ -741,18 +762,20 @@ div#block-block-123 {
 #susytest4 {
     @include span(6 of 12 last);
 }
-
+// }}}
 /* ==========================================================================
    test styles
    ========================================================================== */
+// {{{
 /* fix padding at top of pages */
 div#content-wrapper {
     padding-top: 20px;
 }
-
+// }}}
 /* ==========================================================================
    Taxonomy Page tweaks
    ========================================================================== */
+// {{{
 .page-taxonomy-term article.node {
     border-bottom: 1px solid #ccc;
 }
@@ -760,11 +783,11 @@ div#content-wrapper {
 .page-taxonomy-term h1#page-title {
     text-transform: capitalize;
 }
-
+// }}}
 /* ==========================================================================
    people pages
    ========================================================================== */
-
+// {{{
 .node-type-people {
     .field-name-field-picture {
         float: left;
@@ -783,10 +806,11 @@ div#content-wrapper {
         @include border-radius;
     }
 }
-
+// }}}
 /* ==========================================================================
    search page
    ========================================================================== */
+// {{{
 .section-all-search, #block-roblib-search-roblib-search-form {
     input.form-submit {
         background: none;
@@ -839,11 +863,11 @@ h2.pane-title.block-title {
     // @include border-radius;
     // @include fadeIn(3s);
 }
-
+// }}}
 /* ==========================================================================
    header icons
    ========================================================================== */
-
+// {{{
 h1#page-title:before {
     font-family: "fa_islandora";
     font-style: normal;
@@ -901,11 +925,11 @@ h1#page-title:before {
 .section-bar-sg h1#page-title:before {
     content: '\e838';
 }
-
+// }}}
 /* ==========================================================================
    anchor positioning
    ========================================================================== */
-
+// {{{
 // adjust the anchors distance from the top of the page for positioning
 $anchor-offset: -350px;
 
@@ -915,10 +939,11 @@ a.anchor--main-navbar-links {
     top: $anchor-offset;
     visibility: hidden;
 }
-
+// }}}
 /* ==========================================================================
    askus panel
    ========================================================================== */
+// {{{
 #block-panels-mini-ask-us-panel {
     i.icon.fontello {
         font-size: 1.4em;
@@ -957,11 +982,11 @@ a.anchor--main-navbar-links {
    
     }
 }
-
+// }}}
 /* ==========================================================================
    askus dummy block
    ========================================================================== */
-
+// {{{
 .dummy-widget {
     background: #D9D9D9;
     border: 1px solid #A8A9A7;
@@ -983,11 +1008,11 @@ a.anchor--main-navbar-links {
         margin: 5px 0 10px;
     }
 }
-
+// }}}
 /* ==========================================================================
    askus menu icon
    ========================================================================== */
-
+// {{{
 #nice-menu-2 {
     i.icon.fontello.icon-chat {
         font-size: 20px;
@@ -1002,14 +1027,44 @@ a.anchor--main-navbar-links {
         padding-top: 4px;
     }
 }
-
+// }}}
 /* ==========================================================================
    askus widget position fix
    ========================================================================== */
+// {{{
 #content .panel-display, #content .panel-flexible {
     margin-right: 0px;
     margin-left: 0px;
 }
-
+// }}}
+/* ==========================================================================
+   imports
+   ========================================================================== */
+// {{{
 // new additions
-@import 'summer2015-update';
+@import 'summer2015-update';// }}}
+.lib-times dt {
+    float: left;
+    width: 252px;
+    font-weight: initial;
+	font-size: .9em;
+}
+.lib-times dd {
+    margin: 0;
+	font-size: .9em;
+    font-weight: inherit;
+}
+.panel--faq-hours dl {
+    margin: 0;
+    padding: 0;
+}
+
+.faq p {
+    margin: 0;
+    /*margin-top: 10px;*/
+}
+.other-hours {
+	a {
+	font-size: .9em;
+	}
+}

@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* @override 
-  http://roblib.local:8083/sites/all/themes/roblib_theme/css/roblib_theme.css?n4g174 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 article,
@@ -302,6 +300,13 @@ th {
 /* **************************************
 / Global stuff
 /************************************** */
+/*adds a border around images in the content area*/
+#content img {
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 4px;
+}
+
 #top-panels-wrapper {
   border-top: 1px solid #f5f4f3;
   padding-top: 20px;
@@ -317,9 +322,6 @@ h1#page-title {
   text-decoration: underline;
 }
 
-/* **************************************
-/ Main Nav Bar
-/************************************** */
 /***************************************
 / Header
 /************************************** */
@@ -413,6 +415,30 @@ h1#page-title {
   border-left: none;
 }
 
+/*=============================================
+* =        Social media footer block            =
+* =============================================*/
+ul.social-media li {
+  display: inline-block;
+  width: 43%;
+  text-align: center;
+}
+
+ul.social-media li a:hover {
+  color: #5b8c1f;
+}
+
+ul.social-media li i {
+  font-size: 3em;
+  transition: color 0.3s;
+}
+
+.footer-links .title:nth-of-type(2) {
+  margin-top: 1em;
+  display: block;
+}
+
+/*=====    Social media footer block  ======*/
 /* *****************************
 /   closure notice block
 ***************************** */
@@ -879,7 +905,7 @@ nav.green_landing_page_buttons ul.menu li.last {
   padding-right: 0;
 }
 nav.green_landing_page_buttons ul.menu li {
-  width: 32%;
+  width: 23.6%;
 }
 nav.green_landing_page_buttons ul.menu a {
   font-size: 19px;
@@ -1375,6 +1401,9 @@ a.anchor--main-navbar-links {
   margin-left: 0px;
 }
 
+/* ==========================================================================
+   imports
+   ========================================================================== */
 /*=================================================================================================================
 =            copied from the pauls roblib search module, the original is blocked in the theme settings            =
 =================================================================================================================*/
@@ -3542,23 +3571,19 @@ div#menu-bar-wrapper {
 }
 
 #menu-bar .todays-hours a {
-  -moz-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  /*@include transition(color 0.2s);*/
 }
 #menu-bar .todays-hours a:hover {
-  color: #be2b05;
+  /*color: lighten($green, 10%);*/
+  text-decoration: underline;
 }
 
 #site-name a {
-  -moz-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  /*@include transition(color 0.2s);*/
 }
 #site-name a:hover {
-  color: #be2b05;
+  /*color: lighten($green, 10%);*/
+  text-decoration: underline;
 }
 
 #header-wrapper, #top-panels-wrapper {
@@ -3594,6 +3619,7 @@ div#menu-bar-wrapper {
 
 .site-name {
   width: 125px;
+  margin-top: 5px;
 }
 
 .logo {
@@ -3623,7 +3649,7 @@ div#menu-bar-wrapper {
     float: right;
   }
 }
-@media (min-width: 1275px) {
+@media (min-width: 1020px) {
   .todays-hours.mobile {
     display: none;
   }
@@ -3641,7 +3667,7 @@ div#menu-bar-wrapper {
     margin-right: 5.26316%;
   }
 }
-@media (min-width: 1275px) {
+@media (min-width: 1020px) {
   .upei-branding {
     width: 280px;
     float: left;
@@ -3660,7 +3686,7 @@ div#menu-bar-wrapper {
     margin-right: 5.26316%;
   }
 }
-@media (min-width: 1275px) {
+@media (min-width: 1020px) {
   .megamenu {
     width: 100%;
   }
@@ -3670,7 +3696,7 @@ div#menu-bar-wrapper {
   }
 }
 
-@media (min-width: 980px) and (max-width: 1275px) {
+@media (min-width: 980px) and (max-width: 1020px) {
   .megamenu {
     border-top: 2px groove #5A5A5A;
     margin-top: 4px;
@@ -3680,7 +3706,7 @@ div#menu-bar-wrapper {
 .todays-hours.desktop {
   display: none;
 }
-@media (min-width: 1275px) {
+@media (min-width: 1020px) {
   .todays-hours.desktop {
     display: block;
     width: 180px;
@@ -3690,12 +3716,20 @@ div#menu-bar-wrapper {
   }
 }
 
+@media (min-width: 1020px) and (max-width: 1275px) {
+  .logo {
+    display: none;
+  }
+}
 /* ==========================================================================
   todays hours
   ========================================================================== */
 #menu-bar .todays-hours a {
   color: #fff;
   font-size: .9em;
+}
+#menu-bar .todays-hours a:hover {
+  /*color: $green;*/
 }
 
 .megamenu button {
@@ -3797,7 +3831,7 @@ div#menu-bar-wrapper {
   width: 100%;
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1020px) {
   .sub {
     width: 1120px;
     transform: translateX(-210px);
@@ -4117,4 +4151,31 @@ div#mediafront_tours_menu_panel_player_2 {
 
 .placeholder .block-content p {
   margin: 2px;
+}
+
+.lib-times dt {
+  float: left;
+  width: 252px;
+  font-weight: initial;
+  font-size: .9em;
+}
+
+.lib-times dd {
+  margin: 0;
+  font-size: .9em;
+  font-weight: inherit;
+}
+
+.panel--faq-hours dl {
+  margin: 0;
+  padding: 0;
+}
+
+.faq p {
+  margin: 0;
+  /*margin-top: 10px;*/
+}
+
+.other-hours a {
+  font-size: .9em;
 }

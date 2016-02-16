@@ -659,4 +659,4 @@ settings[menu_bullets] = mb-dd
 settings[at-release] = 7.x-3.x
 settings[at-color] = 1
 settings[nice_menus_custom_css] = sites/all/themes/roblib_theme/css/nice_menus_roblib.css
-settings[path] = sites/librarytest.upei.ca/themes/themes/roblib_theme/generated_files
+settings[path] = sites/library.upei.ca/themes/themes/roblib_theme/generated_files
