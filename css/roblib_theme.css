@@ -4056,6 +4056,131 @@ div#menu-bar-wrapper {
     margin: 0px;
   }
 }
+/*button row*/
+.button-container .mega-nav li {
+  font-size: 19px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5B8C1F', endColorstr='#FF25380D');
+  background-color: #5b8c1f;
+  border: 0;
+  color: white;
+  text-shadow: #172408 0 -1px 0;
+  font-size: 16px;
+  padding: 0.2em 1.4em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff !important;
+  text-decoration: none !important;
+  width: 25%;
+  text-align: center;
+  margin: 10px;
+}
+.button-container .mega-nav li:hover {
+  text-decoration: none;
+}
+.button-container .mega-nav li:hover {
+  background-color: #4d771a;
+}
+.button-container .mega-nav li:active {
+  background-color: #456b18;
+}
+.button-container .mega-nav li.disabled, .button-container .mega-nav li[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.button-container .mega-nav li::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+.button-container .mega-nav li a {
+  padding: 5px !important;
+  border: 0 !important;
+  color: #fff;
+}
+
+.databases .mega-nav > li, .databases .dropdown-menu .mega-nav > li {
+  display: inline-block;
+}
+
+.databases .button-container ul {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin: 0 auto !important;
+}
+.databases .button-container ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.databases .button-container ul .button-container .mega-nav li {
+  width: 32.20339%;
+  float: left;
+}
+.databases .button-container ul .button-container .mega-nav li:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.databases .button-container ul .button-container .mega-nav li:nth-child(3n + 2) {
+  margin-left: 33.89831%;
+  margin-right: -100%;
+  clear: none;
+}
+.databases .button-container ul .button-container .mega-nav li:nth-child(3n + 3) {
+  margin-left: 67.79661%;
+  margin-right: -100%;
+  clear: none;
+}
+
+/*databases by subject block*/
+.db_by_subject ul {
+  -webkit-columns: 6;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 6;
+  /* Firefox */
+  columns: 6;
+  -webkit-column-rule: 1px solid #ccc;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid #ccc;
+  /* Firefox */
+  column-rule: 1px solid #ccc;
+  /*height: 150px;*/
+}
+
+.db_by_subject ul a {
+  text-decoration: none;
+  color: #8c2004;
+}
+
+.db_by_subject li {
+  list-style-type: none !important;
+  list-style-image: none !important;
+  font-size: .8em;
+  margin-bottom: 4px;
+}
+
+.databases .green-button a {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
 #tours-page-link p {
   margin: 0;
 }
