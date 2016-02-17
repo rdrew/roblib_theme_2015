@@ -1,4 +1,5 @@
 @import "roblib-search";
+
 @import "megamenu";
 
 .hide-on-desktop {
@@ -495,37 +496,39 @@ div#menu-bar-wrapper {
 	}
 }
 
-
+div#block-panels-mini-databases {
+    height: 243px;
+}
 /*button row*/
-.button-container .mega-nav li {
-	@include green-button;
+/*.button-container .mega-nav li {*/
+	/*@include green-button;*/
 
-	width: 25%;
-	text-align: center;
-	margin: 10px;
+	/*width: 25%;*/
+	/*text-align: center;*/
+	/*margin: 10px;*/
 
-	a {
-		padding: 5px !important;
-		border: 0 !important;
-		color:#fff;
-	}
-}
+	/*a {*/
+		/*padding: 5px !important;*/
+		/*border: 0 !important;*/
+		/*color:#fff;*/
+	/*}*/
+/*}*/
 
-//style override
-.databases .mega-nav > li, .databases .dropdown-menu .mega-nav > li {
-    display: inline-block;
-}
-.databases .button-container ul {
-	@include container;
-	width: 80%;
-	margin: 0 auto !important;
-	//@include susy-grid-background;
+/*//style override*/
+/*.databases .mega-nav > li, .databases .dropdown-menu .mega-nav > li {*/
+    /*display: inline-block;*/
+/*}*/
+/*.databases .button-container ul {*/
+	/*@include container;*/
+	/*width: 80%;*/
+	/*margin: 0 auto !important;*/
+	/*//@include susy-grid-background;*/
 
-.button-container .mega-nav li  {
-		@include gallery(4 of 12);
-		//@include span(25%);
-	}
-}
+/*.button-container .mega-nav li  {*/
+		/*@include gallery(4 of 12);*/
+		/*//@include span(25%);*/
+	/*}*/
+/*}*/
 
 /*databases by subject block*/
 .db_by_subject ul {
