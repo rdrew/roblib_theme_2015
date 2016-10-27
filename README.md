@@ -1,1 +1,4 @@
-# roblib_theme_2015
+# Drupal 7 theme: Robertson Library @ UPEI
+- subtheme of Corolla (Active Themes)
+- Grunt workflow
+
